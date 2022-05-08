@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
 
+
 # Create your models here.
 
 Size_breed_choice = [
@@ -9,6 +10,7 @@ Size_breed_choice = [
     ('Medium', 'Medium'),
     ('Large', 'Large')
 ]
+
 
 # Breed Model
 
@@ -41,3 +43,4 @@ class Dog(models.Model):
     color = models.CharField(max_length=200)
     favoritefood = models.CharField(max_length=200)
     favoritetoy = models.CharField(max_length=200)
+
